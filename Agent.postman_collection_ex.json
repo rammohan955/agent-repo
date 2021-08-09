@@ -1,0 +1,572 @@
+{
+	"info": {
+		"_postman_id": "52e42b24-7e99-4881-8f1c-e742127bb2c3",
+		"name": "Agent",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Teams",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/teams",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teams"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Teams",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/teams",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teams"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 05:55:55 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Marvel\",\n        \"managers\": [\n            {\n                \"id\": 1,\n                \"firstName\": \"Ram\",\n                \"lastName\": \"Manager\",\n                \"idNumber\": \"1011125190099\"\n            }\n        ]\n    },\n    {\n        \"id\": 2,\n        \"name\": \"DC\",\n        \"managers\": [\n            {\n                \"id\": 2,\n                \"firstName\": \"Bruce\",\n                \"lastName\": \"Manager\",\n                \"idNumber\": \"1011125190011\"\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Team By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/team/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"team",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Team By Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/team/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"team",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 05:56:03 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Marvel\",\n    \"agents\": [\n        {\n            \"id\": 1,\n            \"firstName\": \"Bruce\",\n            \"lastName\": \"Banner\"\n        },\n        {\n            \"id\": 2,\n            \"firstName\": \"Tony\",\n            \"lastName\": \"Stark\"\n        },\n        {\n            \"id\": 3,\n            \"firstName\": \"Peter\",\n            \"lastName\": \"Parker\"\n        },\n        {\n            \"id\": 6,\n            \"firstName\": \"Bruce\",\n            \"lastName\": \"Banner\"\n        },\n        {\n            \"id\": 7,\n            \"firstName\": \"Tony\",\n            \"lastName\": \"Stark\"\n        },\n        {\n            \"id\": 8,\n            \"firstName\": \"Peter\",\n            \"lastName\": \"Parker\"\n        },\n        {\n            \"id\": 11,\n            \"firstName\": \"Bruce\",\n            \"lastName\": \"Banner\"\n        },\n        {\n            \"id\": 12,\n            \"firstName\": \"Tony\",\n            \"lastName\": \"Stark\"\n        },\n        {\n            \"id\": 13,\n            \"firstName\": \"Peter\",\n            \"lastName\": \"Parker\"\n        }\n    ],\n    \"managers\": [\n        {\n            \"id\": 1,\n            \"firstName\": \"Ram\",\n            \"lastName\": \"Manager\",\n            \"idNumber\": \"1011125190099\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Agents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/agents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agents"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Agents",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/agents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agents"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 05:56:52 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"firstName\": \"Bruce\",\n        \"lastName\": \"Banner\",\n        \"team\": {\n            \"id\": 1,\n            \"name\": \"Marvel\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"firstName\": \"Tony\",\n        \"lastName\": \"Stark\",\n        \"team\": {\n            \"id\": 1,\n            \"name\": \"Marvel\"\n        }\n    },\n    {\n        \"id\": 3,\n        \"firstName\": \"Peter\",\n        \"lastName\": \"Parker\",\n        \"team\": {\n            \"id\": 1,\n            \"name\": \"Marvel\"\n        }\n    },\n    {\n        \"id\": 4,\n        \"firstName\": \"Bruce\",\n        \"lastName\": \"Wayne\",\n        \"team\": {\n            \"id\": 2,\n            \"name\": \"DC\"\n        }\n    },\n    {\n        \"id\": 5,\n        \"firstName\": \"Clark\",\n        \"lastName\": \"Kent\",\n        \"team\": {\n            \"id\": 2,\n            \"name\": \"DC\"\n        }\n    },\n    {\n        \"id\": 6,\n        \"firstName\": \"Bruce\",\n        \"lastName\": \"Banner\",\n        \"team\": {\n            \"id\": 1,\n            \"name\": \"Marvel\"\n        }\n    },\n    {\n        \"id\": 7,\n        \"firstName\": \"Tony\",\n        \"lastName\": \"Stark\",\n        \"team\": {\n            \"id\": 1,\n            \"name\": \"Marvel\"\n        }\n    },\n    {\n        \"id\": 8,\n        \"firstName\": \"Peter\",\n        \"lastName\": \"Parker\",\n        \"team\": {\n            \"id\": 1,\n            \"name\": \"Marvel\"\n        }\n    },\n    {\n        \"id\": 9,\n        \"firstName\": \"Bruce\",\n        \"lastName\": \"Wayne\",\n        \"team\": {\n            \"id\": 2,\n            \"name\": \"DC\"\n        }\n    },\n    {\n        \"id\": 10,\n        \"firstName\": \"Clark\",\n        \"lastName\": \"Kent\",\n        \"team\": {\n            \"id\": 2,\n            \"name\": \"DC\"\n        }\n    },\n    {\n        \"id\": 11,\n        \"firstName\": \"Bruce\",\n        \"lastName\": \"Banner\",\n        \"team\": {\n            \"id\": 1,\n            \"name\": \"Marvel\"\n        }\n    },\n    {\n        \"id\": 12,\n        \"firstName\": \"Tony\",\n        \"lastName\": \"Stark\",\n        \"team\": {\n            \"id\": 1,\n            \"name\": \"Marvel\"\n        }\n    },\n    {\n        \"id\": 13,\n        \"firstName\": \"Peter\",\n        \"lastName\": \"Parker\",\n        \"team\": {\n            \"id\": 1,\n            \"name\": \"Marvel\"\n        }\n    },\n    {\n        \"id\": 14,\n        \"firstName\": \"Bruce\",\n        \"lastName\": \"Wayne\",\n        \"team\": {\n            \"id\": 2,\n            \"name\": \"DC\"\n        }\n    },\n    {\n        \"id\": 15,\n        \"firstName\": \"Clark\",\n        \"lastName\": \"Kent\",\n        \"team\": {\n            \"id\": 2,\n            \"name\": \"DC\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Agents Pagenation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/agents/pagination?page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agents",
+						"pagination"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Agents Pagenation",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/agents/pagination?page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agents",
+								"pagination"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 05:56:55 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 6,\n        \"firstName\": \"Bruce\",\n        \"lastName\": \"Banner\",\n        \"team\": {\n            \"id\": 1,\n            \"name\": \"Marvel\"\n        }\n    },\n    {\n        \"id\": 7,\n        \"firstName\": \"Tony\",\n        \"lastName\": \"Stark\",\n        \"team\": {\n            \"id\": 1,\n            \"name\": \"Marvel\"\n        }\n    },\n    {\n        \"id\": 8,\n        \"firstName\": \"Peter\",\n        \"lastName\": \"Parker\",\n        \"team\": {\n            \"id\": 1,\n            \"name\": \"Marvel\"\n        }\n    },\n    {\n        \"id\": 9,\n        \"firstName\": \"Bruce\",\n        \"lastName\": \"Wayne\",\n        \"team\": {\n            \"id\": 2,\n            \"name\": \"DC\"\n        }\n    },\n    {\n        \"id\": 10,\n        \"firstName\": \"Clark\",\n        \"lastName\": \"Kent\",\n        \"team\": {\n            \"id\": 2,\n            \"name\": \"DC\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Agent By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/agent/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agent",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Agent By Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/agent/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agent",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 05:56:58 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"firstName\": \"Bruce\",\n    \"lastName\": \"Banner\",\n    \"team\": {\n        \"id\": 1,\n        \"name\": \"Marvel\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Team",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ram\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/team",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"team"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Agent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Ram\",\n    \"lastName\": \"Mohan\",\n    \"idNumber\": \"101112511111\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/agent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"agent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assign Agent to Team",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 6,\n    \"firstName\": \"Ram\",\n    \"lastName\": \"Mohan\",\n    \"idNumber\": \"101112511111\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/team/1/agent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"team",
+						"1",
+						"agent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Manager",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Ram\",\n    \"lastName\": \"Manager\",\n    \"idNumber\": \"10111251222\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/manager",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"manager"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Managers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/managers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"managers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Managers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/managers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"managers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 05:57:16 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"firstName\": \"Ram\",\n        \"lastName\": \"Manager\",\n        \"idNumber\": \"1011125190099\"\n    },\n    {\n        \"id\": 2,\n        \"firstName\": \"Bruce\",\n        \"lastName\": \"Manager\",\n        \"idNumber\": \"1011125190011\"\n    },\n    {\n        \"id\": 3,\n        \"firstName\": \"Ram\",\n        \"lastName\": \"Manager\",\n        \"idNumber\": \"10111251222\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Assign Manager to Team",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 3,\n    \"firstName\": \"Ram\",\n    \"lastName\": \"Manager\",\n    \"idNumber\": \"10111251222\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/team/2/manager",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"team",
+						"2",
+						"manager"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Unassigned Teams",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/teams/unassigned",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teams",
+						"unassigned"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Unassigned Teams",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/teams/unassigned",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teams",
+								"unassigned"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Aug 2021 05:57:23 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 3,\n        \"name\": \"Ram\",\n        \"managers\": []\n    }\n]"
+				}
+			]
+		}
+	]
+}
